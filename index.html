@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Personal Website</title>
+    
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#" class="search"><i class="fa fa-search"></i></a>
+    </div>
+</nav>
+<div class="bgimg-1" id="home"><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="center-text">
+        <span class="portfolio-text"><h1 style="font-weight: bold; color: wheat;">MY WEBSITE LOGO</h1></span>
+    </div>
+</div>
+<div class="content" id="about">
+    <h3>ABOUT ME</h3>
+    <p><em><h4>I love photography!!!</h4></em></p>
+    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="about-row">
+        <div class="about-col">
+            <p><b><i class="fa fa-user"></i>Sarthak Patel</b></p>
+            <img src="./d3.jpg" class="avatar" alt="Photo of Me">
+        </div>
+        <div class="about-col">
+            <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <h3>I'm really good at:</h3>
+    <div class="skills">
+        <div class="skill">
+            <p><i class="fa fa-camera"></i> Photography</p>
+            <div class="skill-bar" style="width:90%;">90%</div>
+        </div>
+        <div class="skill">
+            <p><i class="fa fa-laptop"></i> Web Design</p>
+            <div class="skill-bar" style="width:85%;">85%</div>
+        </div>
+        <div class="skill">
+            <p><i class="fa fa-photo"></i> Photoshop</p>
+            <div class="skill-bar" style="width:75%;">75%</div>
+        </div>
+    </div>
+</div>
+<div class="stats">
+    <div class="stat"><span>14+</span> Partners</div>
+    <div class="stat"><span>55+</span> Projects Done</div>
+    <div class="stat"><span>89+</span> Happy Clients</div>
+    <div class="stat"><span>150+</span> Meetings</div>
+</div>
+<div class="bgimg-2"><br><br><br><br><br><br>
+    <div class="center-text">
+        <span class="portfolio-text"><h1 style="color: wheat;">PORTFOLIO</h1></span>
+    </div>
+</div>
+<div class="content" id="portfolio">
+    <h3>MY WORK</h3>
+    <p><em>Here are some of my latest work hope you like them!</em></p>
+    <div class="portfolio-row">
+        <img src="./d1.jpg" onclick="onClick(this)" alt="A">
+        <img src="./d2.jpg" onclick="onClick(this)" alt="B">
+        <img src="./d4.jpg" onclick="onClick(this)" alt="C">
+        <img src="./d5.jpg" onclick="onClick(this)" alt="D">
+        <img src="./d6.jpg" onclick="onClick(this)" alt="E">
+    </div>
+    <button style="height: 100px;width: 400px;margin-left: 450px;" class="load-more">LOAD MORE</button>
+</div>
+<div id="modal01" class="modal" onclick="this.style.display='none'">
+    <span class="close-button" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="modal-content">
+        <img id="img01" class="modal-image">
+        <p id="caption" class="modal-caption"></p>
+    </div>
+</div>
+<div class="bgimg-3"><br><br><br><br><br><br>
+    <div class="center-text">
+        <span class="contact-text"><h1 style="color: wheat;">CONTACT</h1></span>
+    </div>
+</div>
+<div class="content" id="contact">
+    <h3>WHERE I WORK</h3>
+    <p><em>I'd love your feedback!</em></p>
+    <div class="contact-row">
+        <div class="contact-col">
+            <div class="contact-info">
+                <p><i class="fa fa-map-marker"></i>MATHURA</p>
+                <p><i class="fa fa-phone"></i> Phone: +91 00000000</p>
+                <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+            </div>
+            <p>Swing by for a cup of <i class="fa fa-coffee" aria-hidden="true"></i>, or leave me a note :</p>
+                <input type="text" placeholder="Name" required name="Name">
+                <input type="text" placeholder="Email" required name="Email">
+                <input type="text" placeholder="Message" required name="Message">
+                <button type="submit" class="send-button"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <button type="submit" class="send-button"><i class="fa fa-arrow-up"></i> TO THE TOP</button>
+    <div class="social-media">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-snapchat"></i>
+        <i class="fa fa-pinterest-p"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Powered by <a href="#" class="hover-link">This Website</a></p>
+</footer>
+</body>
+</html>
